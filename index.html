@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Joao Lizárraga</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: "Work Sans", sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: transparent;
+            box-shadow: none;
+            display: flex;
+            flex-wrap: wrap; 
+            align-items: center;
+        }
+        .profile {
+            flex: 1;
+            padding-right: 20px;
+        }
+        .profile h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        .profile p {
+            margin: 10px 0;
+            font-size: 1.2em;
+            line-height: 1.6;
+            /*text-align: justify;
+            text-justify: inter-word;*/
+        }
+        .profile-image {
+            flex: 1;
+            text-align: right;
+        }
+        .profile-image img {
+            max-width: 80%;
+            height: auto;
+            border-radius: 50px;
+        }
+        .profile a {
+            color: #681DA8; 
+            text-decoration: none; 
+            font-size: 1.2em;
+        }
+        .profile a:hover {
+            color: #FF5E1A; 
+            text-decoration: underline; 
+        }
+        .split-section {
+            display: flex;
+            flex-wrap: wrap; 
+            margin-top: 30px;
+        }
+        .split-section .left, .split-section .right {
+            flex: 1;
+        }
+        .split-section .left {
+            padding-right: 20px;
+        }
+        .split-section .right {
+            padding-left: 20px;
+        }
+        .split-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .publications {
+            margin-top: 0;
+        }
+        .publications h2 {
+            border-bottom: 2px solid #FF5E1A;
+            padding-bottom: 10px;
+        }
+        .publications ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .publications li {
+            margin: 15px 0;
+        }
+        .publications a {
+            color: #681DA8; 
+            text-decoration: none; 
+        }
+        .publications a:hover {
+            color: #FF5E1A; 
+            text-decoration: underline; 
+        }
+        .social-icons {
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: transparent;
+            box-shadow: none;
+            text-align: center;
+        }
+        .social-icons h2 {
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .social-icons a {
+            color: #333;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 2em;
+        }
+        .social-icons a:hover {
+            color: #FF5E1A;
+        }
+
+        @media (max-width: 768px) {
+            .container, .split-section {
+                flex-direction: column; 
+                text-align: center; 
+            }
+            .profile, .profile-image, .split-section .left, .split-section .right {
+                padding: 0; 
+                text-align: center; 
+            }
+            .profile-image img, .split-section img {
+                margin-top: 20px; 
+            }
+            .social-icons a {
+                font-size: 1.5em; 
+                margin: 0 10px; 
+            }
+        }
+    </style>
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-HHF9DNWH5J"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+
+        gtag('config', 'G-HHF9DNWH5J');
+    </script>
+</head>
+<body>
+
+    <div class="container">
+        <div class="profile"> 
+            <h1 style="margin-bottom:1cm; color: #FF5E1A;">Joao Lizárraga</h1>
+            
+            <p style="margin-bottom:1cm;">I am pursuing a PhD in Physics at the University of Campinas (UNICAMP) in Brazil. My advisor is Marcus de Aguiar, and we work in the Department of Condensed Matter Physics.</p>
+
+            <p style="margin-bottom:1cm;">My research focuses on systems of interacting individuals that exhibit spatiotemporal activity, most of which are inspired by nature. Currently, I am investigating phenomena related to synchronization and (much more recently) collective motion.</p>
+
+	    <p style="margin-bottom:1cm;">I enjoy finding simple solutions to complex problems, and while my work is primarily theoretical, I rely heavily on numerical simulations.</p>
+
+            <a href="" target="_blank">[Resume]</a>           
+        </div>
+        <div class="profile-image">
+            <img src="pt.png" alt="Joao Lizárraga">
+        </div>
+    </div>
+
+    <div class="container split-section">
+        <div class="left">
+            <video autoplay loop muted playsinline style="width:100%; height:auto; border-radius: 10px;">
+                <source src="gf.mp4" type="video/mp4">
+            </video>       
+             <figcaption style="font-size: 0.9em; color: #555; text-align: center; margin-top: -10px;">
+        Collective motion. Simulation from this <a href="https://arxiv.org/abs/2509.05140">[paper]</a>.
+    </figcaption> 
+        </div>
+        <div class="right">
+            <section class="publications">
+                <h2 style="color: #FF5E1A">Recent Publications</h2>
+                <ul>
+		<li><strong>Swarming and flocking unified through behavioral imperfections</strong></li>
+                <li>Under review</li>
+                <li style = "padding-bottom: 15px;"><a href="https://arxiv.org/abs/2509.05140" target="_blank">[Paper]</a></li>
+                <li><strong>A solvable two-dimensional swarmalator model</strong></li>
+                <li>Proceedings A (2024) </li>
+                <li style = "padding-bottom: 15px;"><a href="https://royalsocietypublishing.org/doi/abs/10.1098/rspa.2024.0448" target="_blank">[Paper]</a></li>
+                <li><strong>Order, chaos, and dimensionality transition in a system of swarmalators</strong></li>
+                <li>Physical Review E (2024) </li>
+                <li style = "padding-bottom: 15px;"><a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.109.044209" target="_blank">[Paper]</a> </li>
+                <li><strong>Synchronization of Sakaguchi swarmalators</strong></li>
+                <li>Physical Review E (2023) </li>
+                <li style = "padding-bottom: 15px;"><a href="https://journals.aps.org/pre/abstract/10.1103/PhysRevE.108.024212" target="_blank">[Paper]</a>  <a href="https://docs.google.com/presentation/d/1CQ0SZy_nmpw5_xjs2GqBFPhGqR9B3xWmZBdlkQWgNYo/edit?usp=sharing" target="_blank">[Dynamics Days presentation]</a></li>
+            </ul>
+            </section>
+        </div>
+    </div>
+
+    <div class="social-icons">
+        <a href="mailto:joao.lizarraga@dac.unicamp.br" target="_blank" title="E-mail">
+            <i class="fas fa-envelope"></i> 
+        </a>
+        <a href="https://scholar.google.com/citations?user=B0ywxxoAAAAJ" target="_blank" title="Google Scholar">
+            <i class="ai ai-google-scholar"></i> 
+        </a>
+        <a href="https://github.com/liza33aga" target="_blank" title="GitHub">
+            <i class="fab fa-github"></i> 
+        </a>
+        <a href="https://www.researchgate.net/profile/Joao-Lizarraga-2" target="_blank" title="Researchgate">
+            <i class="fab fa-researchgate"></i> 
+        </a>
+    </div>
+
+</body>
+</html>
